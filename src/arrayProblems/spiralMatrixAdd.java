@@ -60,5 +60,5 @@ public class spiralMatrixAdd {
         int[][] matrix = GenerateSpiral.generateSpiralMatrix(n);
         GenerateSpiral.printMatrix(matrix);
 
-    }x
+    }
 }
