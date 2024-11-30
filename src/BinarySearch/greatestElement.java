@@ -1,7 +1,7 @@
 package BinarySearch;
 
 public class greatestElement {
-    public static void main(String args[]){
+    public static void main(String[] args){
         int[] arr = {-1, 0, 2, 3, 4, 7, 55, 75, 87, 99, 765, 945};
         int target = 75;
 
