@@ -1,8 +1,8 @@
-package Basic;  // Remove this line if you don't have a package named 'Basic'
+package Basic;
 
 import java.util.Scanner;
 
-public class tripProblem {  // Class name should match the filename
+public class tripProblem {
 
     public static double tripCostSharing(int[] cost) {
         int n = cost.length;
@@ -31,7 +31,6 @@ public class tripProblem {  // Class name should match the filename
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Input number of students
         System.out.print("Enter number of students: ");
         int n = scanner.nextInt();
         if (n <= 0 || n > 1000) {
@@ -40,7 +39,6 @@ public class tripProblem {  // Class name should match the filename
             return;
         }
 
-        // Input cost
         int[] cost = new int[n];
         for (int i = 0; i < n; i++) {
             System.out.print("Enter amount spent by student " + (i + 1) + ": ");
