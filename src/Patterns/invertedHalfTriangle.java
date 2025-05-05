@@ -5,7 +5,7 @@ public class invertedHalfTriangle {
         int n = 5;
 
         for (int i = n; i > 0; i--){
-            for (int j = n; j < i; j++){
+            for (int j = i; j < n; j++){
                 System.out.print(" ");
             }
             for (int k = i; k > 0; k--){
