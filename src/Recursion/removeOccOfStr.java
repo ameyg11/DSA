@@ -4,31 +4,32 @@ import java.util.Scanner;
 
 public class removeOccOfStr {
 
-    static String removeOccurance(String str, String alpha, int idx){
+    static String removeOccurance(String str, int idx){
 
         String ans = new String();
 
         // base case
-        if(idx >= str.length()){
-            return ans;
+        if(idx == str.length()){
+            return "";
         }
+
+        String smallAns =  removeOccurance(str, idx + 1);
+
+        char currChar = str.charAt(idx);
 
         if(str.charAt(idx) != 'a'){
-            ans += str.charAt(idx);
+            return currChar + smallAns;
+        }else {
+            return smallAns;
         }
-
-        removeOccurance(str, alpha, idx + 1);
-
-        return ans;
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         String str = sc.nextLine();
-        String alpha = sc.next();
 
-        System.out.print(removeOccurance(str, alpha, 0));
+        System.out.print(removeOccurance(str, 0));
 
     }
 }
