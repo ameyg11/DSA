@@ -18,7 +18,25 @@ public class _01_basicString {
 //        System.out.println(str.length());
 //        System.out.println(str.charAt(6));
 
+
+//        String a = "amey";
+//        String b = "amey";
+//        String c = new String("amey");
+//        System.out.println(a == b);
+//        System.out.println(b == c);
+//        System.out.println(a.equals(c));
+
+        //<------------------------ASCII values------------------------------->
+        System.out.println('a' + 'b');
+        System.out.println("a" + "b");
+        System.out.println('a' + 3);
+        System.out.println((char)('a' + 3));
+        System.out.println("a" + 'b');
+
+
+
         String str = "Amey Gawade";
+        System.out.println(str.trim().toLowerCase());
         System.out.println(str.indexOf('w'));  // returns first occurence/index of character
 //        System.out.println();
         String gtr = "Amey Gawade";
