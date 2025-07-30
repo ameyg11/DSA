@@ -4,7 +4,6 @@ import com.sun.security.jgss.GSSUtil;
 
 import java.util.Scanner;
 
-
 public class _1arrayRecur {
 
     static void printArray2(int[] arr, int num){
