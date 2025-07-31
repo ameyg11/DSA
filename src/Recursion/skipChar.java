@@ -2,7 +2,7 @@ package Recursion;
 
 public class skipChar {
     public static void main(String[] args) {
-        System.out.println(skippedStr("bcabaacega", 'a', 0, ""));
+           System.out.println(skippedStr("bcabaacega", 'a', 0, ""));
     }
 
     public static String skippedStr(String str, char ch, int idx, String ans){
