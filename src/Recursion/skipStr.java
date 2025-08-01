@@ -14,6 +14,7 @@ public class skipStr {
             idx += rem.length() - 1;
         }else ans += str.charAt(idx);
 
+
         return skippedStr(str, rem, idx + 1, ans);
     }
 }
