@@ -16,8 +16,6 @@ public class skipChar {
 //            System.out.println(ans);
         }
 
-
-
         return skippedStr(str, ch, idx + 1, ans);
     }
 }
