@@ -12,7 +12,7 @@ public class hashMap1 {
         System.out.println(map.get("amey"));
         System.out.println(map.containsValue(11));
 
-        // mostly reccomended
+        // mostly recommended
         for(Map.Entry<String, Integer> e : map.entrySet()){
             System.out.print(e.getKey());
             System.out.println(e.getValue());
@@ -24,6 +24,11 @@ public class hashMap1 {
         for(String key: keys){
             System.out.print(" " + key + " " +map.get(key));
         }
+
+        // removing any key
+
+        map.remove("siddesh");
+        System.out.print(map);
 
     }
 }
