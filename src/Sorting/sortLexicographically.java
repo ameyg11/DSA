@@ -29,7 +29,7 @@ public class sortLexicographically {
 
     public static void main(String[] args) {
         String[] arr = {"papaya","lime","watermelon","apple","mango","kiwi","able","abale"};
-        int minIdx = 0;
+
         System.out.print(Arrays.toString(sortedLex(arr)));
 
     }
