@@ -13,10 +13,10 @@ import java.util.Arrays;
 
 public class sortLexicographically {
 
-    static String[] sortedLex(String[] arr, int minIdx){
+    static String[] sortedLex(String[] arr){
 
         for(int i=0; i<arr.length; i++){
-            minIdx = i;
+            int minIdx = i;
             for(int j=i+1; j< arr.length; j++){
                 if(arr[i].charAt(0) > arr[j].charAt(0)){
                     String temp = arr[i];
@@ -31,7 +31,7 @@ public class sortLexicographically {
     public static void main(String[] args) {
         String[] arr = {"papaya","lime","watermelon","apple","mango","kiwi","able","abale"};
         int minIdx = 0;
-        System.out.print(Arrays.toString(sortedLex(arr,minIdx)));
+        System.out.print(Arrays.toString(sortedLex(arr)));
 
     }
 }
