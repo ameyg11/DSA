@@ -16,7 +16,6 @@ public class sortLexicographically {
     static String[] sortedLex(String[] arr){
 
         for(int i=0; i<arr.length; i++){
-            int minIdx = i;
             for(int j=i+1; j< arr.length; j++){
                 if(arr[i].charAt(0) > arr[j].charAt(0)){
                     String temp = arr[i];
