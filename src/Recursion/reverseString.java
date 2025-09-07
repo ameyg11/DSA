@@ -11,8 +11,19 @@ public class reverseString {
         return smallAns + currentChar;
     }
 
+    static String reversedStr(String str, int idx, String ans){
+        if(idx == str.length()) return ans;
+
+        String smallAns = reversedStr(str, idx + 1, ans);
+
+        return ans + str.charAt(idx );
+    }
+
+
     public static void main(String[] args) {
         String str = "abcde";
         System.out.println(reversedString(str,0));
+        System.out.println(reversedStr(str,0, ""));
+
     }
 }

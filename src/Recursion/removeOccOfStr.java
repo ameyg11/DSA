@@ -23,13 +23,29 @@ public class removeOccOfStr {
             return smallAns;
         }
     }
+    static String removeOcc(String str, int idx, String ans){
+
+
+        if(idx >= str.length()){
+            return ans;
+        }
+
+        if(!(str.charAt(idx) == 'a')){
+            ans += str.charAt(idx);
+        }
+
+        return removeOcc(str, idx+1, ans);
+    }
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         String str = sc.nextLine();
 
-        System.out.print(removeOccurance(str, 0));
+        System.out.println(removeOccurance(str, 0));
+
+        System.out.print(removeOcc(str, 0, ""));
 
     }
 }
