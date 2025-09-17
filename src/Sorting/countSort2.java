@@ -4,20 +4,15 @@ import java.util.Arrays;
 
 public class countSort2 {
 
-    static void displayArr(int[] arr){
-        for(int num: arr){
-            System.out.print(num +" ");
-        }
-    }
 
     static int[] sortedArray(int[] arr){
         int max = Integer.MIN_VALUE;
-        for(int i=0; i<arr.length; i++){
+        for (int i=0; i<arr.length; i++){
             max = Math.max(arr[i], max);
         }
         int[] count = new int[max+1];
 
-        for(int i=0; i<arr.length; i++){
+        for (int i=0; i<arr.length; i++){
             count[arr[i]]++;
         }
 
