@@ -8,8 +8,14 @@ public class binarySearch1 {
         int start = 0;
         int end = arr.length-1;
 
-        int ans= search(arr,target,start,end);
-        System.out.println(ans);
+//        int ans= search(arr,target,start,end);
+//        System.out.println(ans);
+
+        while(target >= 2){
+            System.out.printf("%d is %d", target, search(arr, target, start, end));
+            System.out.println();
+            target /= 2;
+        }
     }
     static int search(int[] arr,int target,int start ,int end){
         while (start <= end){
