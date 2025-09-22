@@ -2,6 +2,23 @@ package BinarySearch;
 
 public class searchRotatedArray {
 
+
+    static int minimum(int[] arr){
+        int ans=-1, n=arr.length, s=0, e=n-1;
+
+        while(s<=e){
+            int mid = s + (e-s)/2;
+
+            if(arr[mid] > arr[n-1]){
+                s=mid+1;
+            }else if (arr[mid] <= arr[n-1]){
+                ans = mid;
+                e=mid-1;
+            }
+        }
+        return ans;
+    }
+
     static int searchTarget(int[] arr,int target){
         int ans=-1, n=arr.length, s=0, e=n-1;
 
@@ -27,21 +44,6 @@ public class searchRotatedArray {
             }
         }
 
-        return ans;
-    }
-    static int minimum(int[] arr){
-        int ans=-1, n=arr.length, s=0, e=n-1;
-
-        while(s<=e){
-            int mid = s + (e-s)/2;
-
-            if(arr[mid] > arr[n-1]){
-                s=mid+1;
-            }else if (arr[mid] <= arr[n-1]){
-                ans = mid;
-                e=mid-1;
-            }
-        }
         return ans;
     }
 
