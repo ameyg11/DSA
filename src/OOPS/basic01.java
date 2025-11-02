@@ -1,5 +1,7 @@
 package OOPS;
 
+import java.util.Arrays;
+
 public class basic01 {
      static class Car{
         String name;
@@ -11,12 +13,17 @@ public class basic01 {
     }
 
 
+
     public static void main(String[] args) {
 
 //        Car maruti = new Car();
 //        maruti.name = "alto";
 //        maruti.price = 200000;
 //        displayName(maruti.name, maruti.price);
+
+        Student[] s4 = new Student[5];
+
+        System.out.println(Arrays.toString(s4));
 
         Student s1 = new Student();
         s1.setRoll(21);
@@ -29,5 +36,12 @@ public class basic01 {
         System.out.println(s2.name);
         System.out.println(s2.getRoll());
         System.out.println(s2.percentage);
-    }
+
+
+        Student s3 = new Student();
+
+        s3.name = "Aniket";
+
+
+     }
 }
