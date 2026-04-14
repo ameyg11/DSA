@@ -21,6 +21,7 @@ public class reverseKQueue {
         for(int i=0; i<k; i++){
             st.push(q.remove());
         }
+        System.out.println(st);
         while(!st.isEmpty()){
             q.add(st.pop());
         }
